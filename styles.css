@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e;
+    color: #ffffff;
 }
 
 .container {
@@ -13,6 +16,11 @@ body {
 
 .time {
     font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
@@ -36,7 +44,7 @@ button {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #2e2e2e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -52,7 +60,7 @@ h2 {
 a {
     display: block;
     margin-bottom: 8px;
-    color: #007BFF;
+    color: #00ff84;
     text-decoration: none;
 }
 
