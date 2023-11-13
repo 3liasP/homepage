@@ -1,23 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: #22180c; /* Use the background color from Pywal JSON */
+    color: #eae1ca; /* Use the foreground color from Pywal JSON */
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 1000px;
+    margin: 0px auto;
     text-align: center;
+}
+
+.home-image {
+    position: relative;
+    top: 0;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    z-index: 1; /* Adjust the z-index as needed */
 }
 
 .time {
     font-size: 3em;
-    margin-bottom: 20px;
+    margin-top: 10px; /* Adjust the margin-top to create space between image and time */
+    color: #92724a; /* Use color1 from Pywal JSON for the time */
+    position: relative; /* Ensure the time stays above the image */
 }
+
 
 .welcome-message {
     font-size: 1.5em;
@@ -31,25 +43,48 @@ body {
 input {
     padding: 8px;
     font-size: 1em;
+    font-family: "Press Start 2P", cursive;
+    color: #7b8368; /* Use color2 from Pywal JSON for the input text */
+    background-color: #cead5a; /* Use color4 from Pywal JSON for the input background */
 }
 
 button {
     padding: 8px 15px;
+    font-family: "Press Start 2P", cursive;
     font-size: 1em;
+    background-color: #eae1ca; /* Use the foreground color from Pywal JSON */
 }
 
 .category-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    margin: 20px;
 }
 
 .card {
+    width: 400px;
     background-color: #2e2e2e;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     text-align: left;
+}
+
+.card-title::after {
+    content: "_";
+    display: inline-block;
+    animation: flashing-underscore 1s infinite alternate;
+}
+
+@keyframes flashing-underscore {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 h2 {
@@ -60,10 +95,11 @@ h2 {
 a {
     display: block;
     margin-bottom: 8px;
-    color: #00ff84;
+    color: #dfa45b; /* Use color13 from Pywal JSON for the link color */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
+

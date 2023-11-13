@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Custom Homepage</title>
-</head>
-<body>
-    <div class="container">
-        <div class="time" id="current-time"></div>
-        <div class="welcome-message" id="welcome-message"></div>
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search on Google">
-            <button onclick="searchGoogle()">Search</button>
-        </div>
-        <div class="category-cards">
-            <div class="card">
-                <h2>Category 1</h2>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <!-- Add more links as needed -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+        <title>Homepage - Elias</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+        <link rel="manifest" href="favicon_io/site.webmanifest" />
+    </head>
+    <body>
+        <div class="container">
+            <img src="img/home.png" alt="Home"  width="240" height="240" class="home-image" />
+            <div class="time" id="current-time"></div>
+            <div class="welcome-message" id="welcome-message"></div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search on Google" />
+                <button onclick="searchGoogle()">Go!</button>
             </div>
-            <div class="card">
-                <h2>Category 2</h2>
-                <a href="#">Link 3</a>
-                <a href="#">Link 4</a>
-                <!-- Add more links as needed -->
-            </div>
-            <!-- Add more cards as needed -->
-        </div>
-    </div>
+            <div class="category-cards">
+                <div class="card">
+                    <h2 class="card-title">> Dev stuff</h2>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                    <a href="https://github.com/">GitHub</a>
+                    <a href="https://www.npmjs.com/">NPM</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">> Work things</h2>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">> Uni / School</h2>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-title">> Media</h2>
+                    <a href="https://www.radio-browser.info/">Radio Browser</a>
+                    <a href="youtube.com">YouTube</a>
+                    <a href="plaza.one">Nightwave Plaza</a>
+                    <a href="https://chat.openai.com/">ChatGPT</a>
 
-    <script src="script.js"></script>
-</body>
+                    <!-- Add more links as needed -->
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>

@@ -29,8 +29,19 @@ function searchGoogle() {
     }
 }
 
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        searchGoogle();
+    }
+}
+
+
 // Update clock every second
 setInterval(updateClock, 1000);
 
 // Initial clock update
 updateClock();
+
+// Add event listener to the search input for Enter key press
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('keypress', handleKeyPress);
