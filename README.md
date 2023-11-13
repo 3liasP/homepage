@@ -12,7 +12,7 @@ $ git clone git@github.com:3liasP/homepage.git
 ```
 2. Copy absolute path of `index.html`
 3. Install [Custom New Tab URL](https://chromewebstore.google.com/detail/mmjbdbjnoablegbkcklggeknkfcjkjia) Chrome extension
-4. Edit the extensions [settings](chrome://extensions/?id=mmjbdbjnoablegbkcklggeknkfcjkjia) at set `Allow access to file URLs` to `ON`
+4. Edit the extensions settings `chrome://extensions/?id=mmjbdbjnoablegbkcklggeknkfcjkjia` and set `Allow access to file URLs` to `ON`
 5. Open `Extensions -> Custom New Tab URL -> "three dot menu" -> Options`
 6. Set "URL or local file path" to `file:///path/to/your/repo/index.html`
 7. Done!
